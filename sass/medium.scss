@@ -1,0 +1,323 @@
+@media only screen and (max-width: 1200px) {
+  .scroll-up-arrow {
+    // opacity: 0;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+    transform: rotate(180deg);
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .hero {
+    // background-color: lightblue;
+    position: relative;
+    width: 100%;
+    // height: 1080px;
+    height: 100vh;
+    // border: 5px solid red;
+    background-image: url("../res/img/svg/hero.svg");
+    background-position: top 0 right 45%;
+    background-size: cover;
+
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 1.7vw;
+      img {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    .navigation-bar {
+      position: absolute;
+      top: 3rem;
+      left: 10vw;
+      .navigation {
+        li {
+          display: inline-block;
+          width: auto;
+          margin-right: 2rem;
+
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 30vh;
+      left: 10vw;
+      .hero-title {
+        p {
+          font-size: calc(2rem + 3vw);
+        }
+      }
+      .hero-slogan {
+        margin-top: 1rem;
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .hero-buttons {
+        margin-top: 5rem;
+        display: flex;
+        width: 20rem;
+        // border: 2px solid green;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          // color: #000;
+          // border: 2px solid blue;
+          border-radius: 6px;
+          display: inline-block;
+          width: 9rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.4rem;
+        }
+      }
+      // .arrow {
+      //   display: none;
+      //   // border: 2px solid pink;
+      //   // width: 20rem;
+      //   // justify-content: center;
+      //   // margin-top: 10rem;
+      //   // img {
+      //   //   width: 3rem;
+      //   //   height: 3rem;
+      //   // }
+      // }
+    }
+
+    .arrow-small {
+      //   visibility: hidden;
+      display: flex;
+      // border: 2px solid pink;
+      position: absolute;
+      bottom: 7rem;
+      left: 10vw;
+      width: 20rem;
+      justify-content: center;
+      margin-top: 10rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    .hero-buttons-extrasmall {
+      display: none;
+    }
+  }
+  @media (orientation: landscape) {
+    .hero {
+      height: 1000px;
+
+      .arrow-small {
+        visibility: visible;
+      }
+      .hero-text {
+        .hero-buttons {
+          visibility: visible;
+        }
+      }
+    }
+
+    @media (min-height: 730px) {
+      .hero {
+        .arrow-small {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    font-size: calc(3rem + 3vw);
+  }
+
+  .about {
+    background: url(../res/img/svg/about_background.svg) top 0rem center;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+
+    .about-title {
+      margin-top: 0;
+    }
+
+    .about-desc {
+      height: auto;
+      width: 50%;
+      margin: auto;
+      font-size: 1.5rem;
+      line-height: 150%;
+      text-align: justify;
+
+      .about-desc-para {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  // Interests
+
+  .interests {
+    // @include new_section;
+    // background: white;
+    background-color: white;
+    margin-top: 10rem;
+    h1 {
+      // @include section_title;
+    }
+
+    .container-fluid {
+      width: 60%;
+      .row {
+        margin-top: 4em;
+        div {
+          // border: 2px red solid;
+
+          .interest-card {
+            border-radius: 20px;
+            // margin-top: 2em;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0),
+              0 15px 20px rgba(0, 0, 0, 0.1);
+            img {
+              // height: 3em;
+              width: 70%;
+              margin-top: 1em;
+            }
+
+            text-align: center;
+
+            .interest-card-title {
+              font-size: 2rem;
+              margin-top: 1em;
+            }
+
+            .interest-card-text {
+              width: 80%;
+              height: auto;
+              margin: 1em auto;
+              padding-bottom: 1em;
+              font-size: 1.4rem;
+              opacity: 0.68;
+            }
+
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            &:hover {
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+                0 10px 10px rgba(0, 0, 0, 0);
+
+              transform: scale(1.01) translateY(-10px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Projects
+
+  .projects {
+    background: white;
+
+    h1 {
+      font-size: 7vw;
+    }
+
+    .container-fluid {
+      width: 80%;
+
+      margin: 0 auto;
+      .row {
+        margin: 4em 0 0 0;
+        width: 100%;
+        div {
+          .project-card {
+            width: 100%;
+            height: 96%;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0),
+              0 15px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+            img {
+              width: 100%;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            }
+
+            text-align: center;
+
+            .project-card-title {
+              font-size: 2rem;
+              padding-top: 2rem;
+            }
+
+            .project-card-text {
+              width: 80%;
+              height: auto;
+              margin: 1em auto;
+              padding-bottom: 1em;
+              font-size: 1.4rem;
+              opacity: 0.68;
+            }
+
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            &:hover {
+              box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+                0 10px 10px rgba(0, 0, 0, 0);
+
+              transform: scale(1.01) translateY(-10px);
+            }
+
+            .built-with {
+              // color: blue;
+              opacity: 1;
+            }
+
+            #project-card-buttons {
+              padding-bottom: 2em;
+              height: auto;
+              width: 80%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-around;
+              a {
+                // @include button_config;
+                width: 8.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Contact
+
+  .contact {
+    .socials {
+      width: 42%;
+      .social-link {
+        transform: scale(1);
+      }
+    }
+  }
+
+  footer {
+    margin-top: 6rem;
+  }
+}

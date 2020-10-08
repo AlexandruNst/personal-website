@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/extrasmall.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Alexandru Nastase</title>
+    <meta property="og:title" content="Alexandru Nastase" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alexandrunst.github.io/trial_website" />
+    <meta property="og:image" itemprop="image" content="https://alexandrunst.github.io/trial_website/res/img/png/logo_white.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="1000" />
+    <meta property="og:site_name" content="Alexandru Nastase" />
+    <meta property="og:description" content="Creative coder, Public speaker, Challenge seeker" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Alexandru Nastase" />
+    <meta name="twitter:description"
+      content="Creative coder, Public speaker, Challenge seeker" />
+    <meta name="twitter:image" content="./res/img/png/logo_white.png" />
+    <meta name="thumbnail" content="./res/img/png/logo.png" />
+    <link rel="shortcut icon" href="./res/img/png/logo.png" type="image/png"/>
+    <!-- <link rel="shortcut icon" href="https://alexandrunst.github.io/trial_website/favicon.ico"> -->
+    <!-- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="./favicon.ico?v=2"/> -->
+  </head>
+  <body>
+    <div class="content">
+      <div class="wrapper">
+        <div class="scroll-up-arrow">
+          <a href="#hero"
+            ><img src="./res/img/svg/arrow.svg" alt="" srcset=""
+          /></a>
+        </div>
+        <!-- Hero -->
+
+        <div class="hero mode-section" id="hero">
+          <div class="logo">
+            <img src="./res/img/svg/logo.svg" alt="logo" />
+          </div>
+          <nav class="navigation-bar">
+            <ul class="navigation">
+              <li class="nav-element">
+                <a href="#projects" class="nav-link"><span class="normal-text">projects</span></a>
+              </li>
+              <li class="nav-element">
+                <a href="#about" class="nav-link"><span class="normal-text">about</span></a>
+              </li>
+              <li class="nav-element">
+                <a href="#interests" class="nav-link"><span class="normal-text">interests</span></a>
+              </li>
+              
+              <li class="nav-element">
+                <a href="#contact" class="nav-link"><span class="normal-text">contact</span></a>
+              </li>
+              <li class="nav-element">
+                <a href="./res/pdf/Alexandru_Nastase_Resume.pdf" target="_blank" class="nav-link"><span class="blue-text">resume</span></a>
+              </li>
+            </ul>
+            <div class="dropdown-button-container" onclick="toggleDropdown()">
+              <div class="hamburger">
+                <!-- <i class="hamburger-line normal-text fa fa-minus"></i>
+                <i class="hamburger-line normal-text fa fa-minus"></i>
+                <i class="hamburger-line normal-text fa fa-minus"></i> -->
+                <span class="hamburger-line normal-text hamburger-line-1"></span>
+                <span class="hamburger-line normal-text hamburger-line-2"></span>
+                <span class="hamburger-line normal-text hamburger-line-3"></span>
+              </div>
+            </div>
+            <div class="dropdown-menu-container">
+              <div class="dropdown-navigation-container">
+                <ul class="dropdown-navigation">
+                  <li class="dropdown-nav-element">
+                    <a href="#projects" class="dropdown-nav-link" onclick="toggleDropdown()"><span class="normal-text">projects</span></a>
+                  </li>
+                  <li class="dropdown-nav-element">
+                    <a href="#about" class="dropdown-nav-link" onclick="toggleDropdown()"><span class="normal-text">about</span></a>
+                  </li>
+                  <li class="dropdown-nav-element">
+                    <a href="#interests" class="dropdown-nav-link" onclick="toggleDropdown()"><span class="normal-text">interests</span></a>
+                  </li>
+                  
+                  <li class="dropdown-nav-element">
+                    <a href="#contact" class="dropdown-nav-link" onclick="toggleDropdown()"><span class="normal-text">contact</span></a>
+                  </li>
+                  <li class="dropdown-nav-element">
+                    <a href="./res/pdf/Alexandru_Nastase_Resume.pdf" target="_blank" class="dropdown-nav-link" onclick="toggleDropdown()"><span
+                        class="blue-text">resume</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="switch-wrapper">
+            <span class="mode-clicker" onclick="changeMode()"></span>
+            <div class="switch">
+              <input type="checkbox" name="circle" id="mode" />
+              <span class="slider"></span>
+              <span class="add add1"></span>
+              <span class="add add2"></span>
+              <span class="add add3"></span>
+            </div>
+          </div>
+          <div class="hero-text">
+            <div class="hero-title">
+              <p class="hero-text-1"><span class="normal-text">Hi, I'm</span></p>
+              <p class="hero-text-2"><span class="normal-text">Alexandru</span></p>
+            </div>
+            <div class="hero-slogan">
+              <p class="hero-slogan-text"><span class="normal-text">22-year-old</span> <span id="slogan"><span class="blue-text">creative coder</span></span><span id="slogan-next"><span class="blue-text">public speaker</span></p>
+            </div>
+            <div class="hero-buttons">
+              <a href="#projects" class="hero-button secondary-button blue-text">My work</a
+              ><a href="#contact" class="hero-button primary-button">Contact me</a>
+            </div>
+            <!-- <div class="arrow">
+              <img src="./res/img/svg/arrow.svg" alt="" srcset="" />
+            </div> -->
+          </div>
+          <div class="hero-buttons-extrasmall">
+            <a href="#" class="hero-button">About me</a
+            ><a href="#" class="hero-button">Contact me</a>
+          </div>
+          <div class="arrow-small">
+            <a href="#projects"
+              ><img src="./res/img/svg/arrow.svg" alt="" srcset=""
+            /></a>
+          </div>
+        </div>
+        <!-- Hero END -->
+                <!-- Projects -->
+        <div class="jumbotron-fluid mode-section projects" id="projects">
+          <h1><p class="normal-text section-title"><span class="normal-text">Projects</p></span></h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="project-card mode-card">
+                  <img src="./res/img/png/project4.png" alt="" />
+                  <p class="project-card-title">
+                    <span class="normal-text"><span class="normal-text">Personal Blog</span></span>
+                  </p>
+                  <p class="project-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        A blog holding a articles about technology and 
+                        computer science, as well as my CV. Learned about authentication,
+                        security, templates and database management.
+                      </span>
+                    </span>
+                  </p>
+                  <p class="project-card-text built-with">
+                    <span class="blue-text"
+                      >HTML, CSS, SASS, Django, JS, Bootstrap</span
+                    >
+                  </p>
+
+                  <div id="project-card-buttons">
+                    <a href="https://github.com/AlexandruNst/blog_and_resume" target="_blank" class="secondary-button"
+                      ><span class="blue-text">Source</span></a
+                    >
+                    <a href="http://alexandrunst.pythonanywhere.com/" target="_blank" class="primary-button">Visit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="project-card mode-card">
+                  <img src="./res/img/png/project3.png" alt="" />
+                  <p class="project-card-title">
+                    <span class="normal-text"><span class="normal-text">Kaff Coffee</span></span>
+                  </p>
+                  <p class="project-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        A website for a unique coffee brand. Kaff prides itself
+                        on its past and provides the experience of the
+                        future - helping you live present to the fullest.
+                      </span>
+                    </span>
+                  </p>
+                  <p class="project-card-text built-with">
+                    <span class="blue-text"
+                      >HTML, CSS, SASS, JS, Flexbox</span
+                    >
+                  </p>
+
+                  <div id="project-card-buttons">
+                    <a href="https://github.com/AlexandruNst/kaff" target="_blank" class="secondary-button"
+                      ><span class="blue-text">Source</span></a
+                    >
+                    <a href="https://kaff-coffee.netlify.app/" target="_blank" class="primary-button">Visit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="project-card mode-card">
+                  <img src="./res/img/png/project2.png" alt="" />
+                  <p class="project-card-title">
+                    <span class="normal-text"><span class="normal-text">Blum</span></span>
+                  </p>
+                  <p class="project-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        A website for a company specialising in decor and indoor 
+                        plants, helping customers achieve a modern interior design
+                        that is perfectly tailored to their needs.
+                      </span>
+                    </span>
+                  </p>
+                  <p class="project-card-text built-with">
+                    <span class="blue-text"
+                      >HTML, CSS, SASS, JS, Flexbox</span
+                    >
+                  </p>
+
+                  <div id="project-card-buttons">
+                    <a href="https://github.com/AlexandruNst/blum" target="_blank" class="secondary-button"
+                      ><span class="blue-text">Source</span></a
+                    >
+                    <a href="https://blum.netlify.app/" target="_blank" class="primary-button">Visit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="project-card mode-card">
+                  <img src="./res/img/png/project1_1.png" alt="" />
+                  <p class="project-card-title">
+                    <span class="normal-text"><span class="normal-text">alexandrunastase.com</span></span>
+                  </p>
+                  <p class="project-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        The website you are looking at now. I wanted a platform to
+                        share my journey and decided that this is one of the best
+                        ways I can achieve that.
+                      </span>
+                    </span>
+                  </p>
+                  <p class="project-card-text built-with">
+                    <span class="blue-text"
+                      >HTML, CSS, SASS, JS, Bootstrap</span
+                    >
+                  </p>
+
+                  <div id="project-card-buttons">
+                    <a href="" class="secondary-button"
+                      ><span class="blue-text">Source</span></a
+                    >
+                    <a href="" class="primary-button">Visit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col"></div>
+              <div class="col-lg-6 col-md-12">
+                <div class="project-card mode-card">
+                  <img src="./res/img/svg/gears.svg" alt="" style="width: 50%; padding-top: 2rem;"/>
+                  <p class="project-card-title" style="padding-top: 10%">
+                    <span class="normal-text"><span class="normal-text">Next project is WIP</span></span>
+                  </p>
+                  <p class="project-card-text" style="padding-bottom: 2rem;">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        To be listed soon.
+                      </span>
+                    </span>
+                  </p>
+                  <!-- <p class="project-card-text built-with">
+                    <span class="blue-text"
+                      >HTML, CSS, SASS, JS, Bootstrap</span
+                    >
+                  </p> -->
+
+                  <!-- <div id="project-card-buttons">
+                    <a href="" class="secondary-button"
+                      ><span class="blue-text">Source</span></a
+                    >
+                    <a href="" class="primary-button">Visit</a>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Projects END -->
+        <!-- About -->
+        <div class="about mode-section" id="about">
+          <h1>
+          <p class="about-title section-title centered-text"><span class="normal-text">About</span></p>
+          <h1>
+          <div class="centered-div about-desc">
+            <p class="about-desc-para">
+              <span class="normal-text">
+                My name is Alexandru Nastase and I am 22 years old. I am currently
+                in my 4<sup>th</sup> year studying
+              </span><span class="blue-text">Computer Science</span> <span class="normal-text">
+                at the University of
+                Birmingham in the UK.
+              </span>
+            </p>
+            <p class="about-desc-para">
+              <span class="normal-text">While remaining</span> <span class="blue-text">enthusiastic</span> <span class="normal-text">
+                about software development, I have,
+                in time, become
+              </span> <span class="blue-text">passionate</span> <span class="normal-text">
+                about frontend technologies, as well as
+                design, UI and UX. In my free time I am a beginner photographer,
+                president of the Public Speaking Society at my university, as well
+                as an
+              </span> <span class="blue-text">eager</span> <span class="normal-text">designer.</span>
+            </p>
+            <p class="about-desc-para">
+              <span class="normal-text">I think of myself as three different personas - </span><span class="blue-text">creative</span> <span class="normal-text">
+                coder,
+                public speaker and challenge seeker - as these are a great
+                description of who I am, what I love doing and my path so far. I
+                am more than excited to have you joining me on my journey right
+                now!
+              </span>
+            </p>
+            <a href="./res/pdf/Alexandru_Nastase_Resume.pdf" target="_blank" class="about-button primary-button">Resume</a>
+          </div>
+         
+        </div>
+
+        <!-- About END -->
+        <!-- Interests -->
+        <div class="jumbotron-fluid mode-section interests" id="interests">
+          <h1>
+            <p class="normal-text section-title centered-text"><span class="normal-text">Interests</span></p>
+          </h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-md-12" id="web-dev">
+                <div class="interest-card mode-card">
+                  <img src="./res/img/svg/web_dev_icon.svg" alt="" />
+                  <p class="interest-card-title">
+                    <span class="normal-text"><span class="normal-text">Software development</span></span>
+                  </p>
+                  <p class="interest-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        Learning software development allows me to be
+                        creative, solve problems and have new ideas.
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12" id="ui-ux">
+                <div class="interest-card mode-card">
+                  <img src="./res/img/svg/ui_ux_icon.svg" alt="" />
+                  <p class="interest-card-title">
+                    <span class="normal-text"><span class="normal-text">UI & UX</span></span>
+                  </p>
+                  <p class="interest-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        I enjoy creating digital experiences centered on the users
+                        and their interactions.
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12" id="pub-sp">
+                <div class="interest-card mode-card">
+                  <img src="./res/img/svg/pub_sp_icon.svg" alt="" />
+                  <p class="interest-card-title">
+                    <span class="normal-text"><span class="normal-text">Public speaking</span></span>
+                  </p>
+                  <p class="interest-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        Public speaking allows me to meet new people and keeps me
+                        engaged, motivated and creative.
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12" id="photo">
+                <div class="interest-card mode-card">
+                  <img src="./res/img/svg/photo_icon.svg" alt="" />
+                  <p class="interest-card-title">
+                    <span class="normal-text"><span class="normal-text">Photography</span></span>
+                  </p>
+                  <p class="interest-card-text">
+                    <span class="normal-text">
+                      <span class="normal-text">
+                        Photography lets me capture and immortalise the most
+                        imporant moments in my life.
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Interests END -->
+        <!-- Contact -->
+        <div class="contact mode-section" id="contact">
+          <h1><p class="section-title"><span class="normal-text">Contact</p></span></h1>
+          <p class="contact-text"><span class="normal-text">Let's talk! You can contact me at</span></p>
+          <p class="email contact-text"><span class="blue-text">hello@alexandrunastase.com</span></p>
+          <p class="contact-text"><span class="normal-text">You can also find me on</span></p>
+          <div class="socials">
+            <a href="https://instagram.com/alexandru.codes" target="_blank" class="insta-link social-link">
+              <svg
+                id="insta"
+                class="mode-contact"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                width="200mm"
+                height="200mm"
+                viewBox="0 0 200 200"
+                version="1.1"
+                id="svg13572"
+                inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+                sodipodi:docname="insta_black.svg"
+              >
+                <defs id="defs13566">
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30348"
+                    id="linearGradient13447"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(1.4881434,0,0,1.4881434,728.80728,-256.71865)"
+                    x1="-392.82095"
+                    y1="268.44345"
+                    x2="-379.62881"
+                    y2="268.44345"
+                  />
+                  <linearGradient
+                    id="linearGradient30348"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30344"
+                      offset="0"
+                      style="stop-color:#ff1300;stop-opacity:1;"
+                    />
+                    <stop
+                      id="stop30346"
+                      offset="1"
+                      style="stop-color:#e43729;stop-opacity:1"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30674"
+                    id="linearGradient13445"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(1.4881434,0,0,1.4881434,728.80728,-256.71865)"
+                    x1="-458.04376"
+                    y1="304.89603"
+                    x2="-386.7431"
+                    y2="304.89603"
+                  />
+                  <linearGradient
+                    inkscape:collect="always"
+                    id="linearGradient30674"
+                  >
+                    <stop
+                      style="stop-color:#fc8102;stop-opacity:1"
+                      offset="0"
+                      id="stop30670"
+                    />
+                    <stop
+                      style="stop-color:#fbb231;stop-opacity:1"
+                      offset="1"
+                      id="stop30672"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30260"
+                    id="linearGradient13443"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(1.4881434,0,0,1.4881434,728.80728,-256.71865)"
+                    x1="-491.70508"
+                    y1="304.89612"
+                    x2="-353.08139"
+                    y2="304.89612"
+                  />
+                  <linearGradient
+                    id="linearGradient30260"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30256"
+                      offset="0"
+                      style="stop-color:#00a5ff;stop-opacity:1"
+                    />
+                    <stop
+                      id="stop30258"
+                      offset="1"
+                      style="stop-color:#7300ff;stop-opacity:1"
+                    />
+                  </linearGradient>
+                </defs>
+                <g
+                  inkscape:label="Layer 1"
+                  inkscape:groupmode="layer"
+                  id="layer1"
+                  transform="translate(0,-97)"
+                >
+                  <path
+                    sodipodi:nodetypes="cscccsccc"
+                    d="m 64.335945,289.81627 h 72.151515 c 62.15443,0 57.09206,-58.21726 57.09206,-58.21726 v -68.78099 c 0,0 5.06237,-58.61102 -57.48578,-58.61102 H 63.942211 c -62.1544239,0 -57.0920539,57.42973 -57.0920539,57.42973 v 69.56852 c 0,0 -5.06237,58.61102 57.4857879,58.61102 z"
+                    id="path13516"
+                    inkscape:connector-curvature="0"
+                  />
+                  <path
+                    sodipodi:nodetypes="cscccsccc"
+                    d="m 64.335945,289.81627 h 72.151515 c 62.15443,0 57.09206,-58.21726 57.09206,-58.21726 v -68.78099 c 0,0 5.06237,-58.61102 -57.48578,-58.61102 H 63.942211 c -62.1544239,0 -57.0920539,57.42973 -57.0920539,57.42973 v 69.56852 c 0,0 -5.06237,58.61102 57.4857879,58.61102 z"
+                    id="path13516a"
+                    inkscape:connector-curvature="0"
+                  />
+                  <circle
+                    r="43.379902"
+                    cy="197.00903"
+                    cx="100.21487"
+                    id="circle13518"
+                  />
+                  <circle
+                    r="43.379902"
+                    cy="197.00903"
+                    cx="100.21487"
+                    id="circle13518a"
+                  />
+
+                  <path
+                    inkscape:connector-curvature="0"
+                    id="path13520"
+                    d="m 154.03367,142.76452 h 0.0104"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="https://github.com/AlexandruNst" target="_blank" class="github-link social-link">
+              <svg
+                id="github"
+                class="mode-contact"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                width="200mm"
+                height="200mm"
+                viewBox="0 0 200 200"
+                version="1.1"
+                id="svg14398"
+                inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+                sodipodi:docname="github_color.svg"
+              >
+                <defs id="defs14392">
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30260"
+                    id="linearGradient14290"
+                    gradientUnits="userSpaceOnUse"
+                    x1="20.079126"
+                    y1="148.28349"
+                    x2="39.346874"
+                    y2="148.28349"
+                    gradientTransform="matrix(10.014131,0,0,10.014131,-196.48777,-1287.7844)"
+                  />
+                  <linearGradient
+                    id="linearGradient30260"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30256"
+                      offset="0"
+                      style="stop-color:#00a5ff;stop-opacity:1"
+                    />
+                    <stop
+                      id="stop30258"
+                      offset="1"
+                      style="stop-color:#7300ff;stop-opacity:1"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30674"
+                    id="linearGradient14364"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(10.014131,0,0,10.014131,-196.48777,-1287.7844)"
+                    x1="22.529554"
+                    y1="149.86237"
+                    x2="36.050591"
+                    y2="149.86237"
+                  />
+                  <linearGradient
+                    inkscape:collect="always"
+                    id="linearGradient30674"
+                  >
+                    <stop
+                      style="stop-color:#fc8102;stop-opacity:1"
+                      offset="0"
+                      id="stop30670"
+                    />
+                    <stop
+                      style="stop-color:#fbb231;stop-opacity:1"
+                      offset="1"
+                      id="stop30672"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30348"
+                    id="linearGradient14367"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(1.4292572,0,0,1.4292572,569.09833,-1525.2116)"
+                    x1="-380.03589"
+                    y1="1241.5577"
+                    x2="-339.76651"
+                    y2="1241.5577"
+                  />
+                  <linearGradient
+                    id="linearGradient30348"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30344"
+                      offset="0"
+                      style="stop-color:#ff1300;stop-opacity:1;"
+                    />
+                    <stop
+                      id="stop30346"
+                      offset="1"
+                      style="stop-color:#e43729;stop-opacity:1"
+                    />
+                  </linearGradient>
+                </defs>
+                <metadata id="metadata14395"></metadata>
+                <g
+                  inkscape:label="Layer 1"
+                  inkscape:groupmode="layer"
+                  id="layer1"
+                  transform="translate(0,-97)"
+                >
+                  <path
+                    sodipodi:nodetypes="csssccc"
+                    inkscape:connector-curvature="0"
+                    id="path14316"
+                    d="m 79.061064,249.55424 c 0,0 -17.028284,4.67967 -21.239976,-1.02149 -3.931315,-5.3217 -13.227159,-21.07111 -25.517288,-14.07518 -8.442022,4.80545 9.324687,5.69044 15.598999,17.67877 5.294226,10.11571 12.195596,11.912 12.195596,11.912 0,0 8.908162,3.44822 18.682266,-0.21396 z"
+                  />
+                  <path
+                    sodipodi:nodetypes="csssccc"
+                    inkscape:connector-curvature="0"
+                    id="path14316"
+                    d="m 79.061064,249.55424 c 0,0 -17.028284,4.67967 -21.239976,-1.02149 -3.931315,-5.3217 -13.227159,-21.07111 -25.517288,-14.07518 -8.442022,4.80545 9.324687,5.69044 15.598999,17.67877 5.294226,10.11571 12.195596,11.912 12.195596,11.912 0,0 8.908162,3.44822 18.682266,-0.21396 z"
+                  />
+                  <path
+                    sodipodi:nodetypes="cccccccccccccccc"
+                    d="m 124.74551,285.25508 c 0,0 0,-19.08701 0.1202,-30.20263 0.1202,-11.14578 -5.08718,-15.88248 -5.08718,-15.88248 0,0 4.69664,-0.66089 10.91541,-2.6537 9.77379,-3.1345 23.3129,-10.40471 28.04957,-26.91806 7.70088,-26.98809 -7.24022,-40.44698 -7.24022,-40.44698 4.53641,-14.82097 -1.25175,-24.75502 -1.25175,-24.75502 -15.49187,0.74107 -25.23561,9.30318 -25.23561,9.30318 -11.72656,-3.51812 -22.53593,-3.54656 -22.53593,-3.54656 0,0 -12.002816,0.03 -23.739377,3.54656 0,0 -9.733728,-8.56211 -25.305715,-9.3432 0,0 -5.557835,9.3432 -0.941322,24.21419 0,0 -15.171408,14.03974 -7.470541,41.02783 7.750934,26.9981 38.924933,29.69196 38.924933,29.69196 -5.985842,8.57569 -4.952806,15.36037 -5.162891,26.78342 l 0.11577,19.06129"
+                    id="path14260"
+                    inkscape:connector-curvature="0"
+                  />
+                  <path
+                    sodipodi:nodetypes="cccccccccccccccc"
+                    d="m 124.74551,285.25508 c 0,0 0,-19.08701 0.1202,-30.20263 0.1202,-11.14578 -5.08718,-15.88248 -5.08718,-15.88248 0,0 4.69664,-0.66089 10.91541,-2.6537 9.77379,-3.1345 23.3129,-10.40471 28.04957,-26.91806 7.70088,-26.98809 -7.24022,-40.44698 -7.24022,-40.44698 4.53641,-14.82097 -1.25175,-24.75502 -1.25175,-24.75502 -15.49187,0.74107 -25.23561,9.30318 -25.23561,9.30318 -11.72656,-3.51812 -22.53593,-3.54656 -22.53593,-3.54656 0,0 -12.002816,0.03 -23.739377,3.54656 0,0 -9.733728,-8.56211 -25.305715,-9.3432 0,0 -5.557835,9.3432 -0.941322,24.21419 0,0 -15.171408,14.03974 -7.470541,41.02783 7.750934,26.9981 38.924933,29.69196 38.924933,29.69196 -5.985842,8.57569 -4.952806,15.36037 -5.162891,26.78342 l 0.11577,19.06129"
+                    id="path14260"
+                    inkscape:connector-curvature="0"
+                  />
+                  <path
+                    d="m 193.94316,197.16096 c 0,51.28232 -41.57867,92.87099 -92.90109,92.87099 -51.282365,0 -92.861043,-41.58867 -92.861043,-92.87099 0,-51.32248 41.578678,-92.90115 92.861043,-92.90115 51.32242,0 92.90109,41.57867 92.90109,92.90115 z"
+                    id="path14264"
+                    inkscape:connector-curvature="0"
+                  />
+                  <path
+                    d="m 193.94316,197.16096 c 0,51.28232 -41.57867,92.87099 -92.90109,92.87099 -51.282365,0 -92.861043,-41.58867 -92.861043,-92.87099 0,-51.32248 41.578678,-92.90115 92.861043,-92.90115 51.32242,0 92.90109,41.57867 92.90109,92.90115 z"
+                    id="path14264"
+                    inkscape:connector-curvature="0"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/alexandrunst/" target="_blank" class="linkedin-link social-link">
+              <svg
+                id="linkedin"
+                class="mode-contact"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                width="200mm"
+                height="200mm"
+                viewBox="0 0 200 200"
+                version="1.1"
+                id="svg15067"
+                inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+                sodipodi:docname="linkedin_color.svg"
+              >
+                <defs id="defs15061">
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30260"
+                    id="linearGradient14302"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(1.4721837,0,0,1.4721837,722.28221,-252.15491)"
+                    x1="-491.70508"
+                    y1="304.89612"
+                    x2="-353.08139"
+                    y2="304.89612"
+                  />
+                  <linearGradient
+                    id="linearGradient30260"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30256"
+                      offset="0"
+                      style="stop-color:#00a5ff;stop-opacity:1"
+                    />
+                    <stop
+                      id="stop30258"
+                      offset="1"
+                      style="stop-color:#7300ff;stop-opacity:1"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient2234"
+                    id="linearGradient14300"
+                    gradientUnits="userSpaceOnUse"
+                    x1="28.39967"
+                    y1="126.9295"
+                    x2="35.655331"
+                    y2="126.9295"
+                  />
+                  <linearGradient
+                    id="linearGradient2234"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop2230"
+                      offset="0"
+                      style="stop-color:#fc8102;stop-opacity:1"
+                    />
+                    <stop
+                      style="stop-color:#fbb231;stop-opacity:1"
+                      offset="0.82806492"
+                      id="stop2236"
+                    />
+                    <stop
+                      id="stop2232"
+                      offset="1"
+                      style="stop-color:#f5c777;stop-opacity:1"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient2234"
+                    id="linearGradient14298"
+                    gradientUnits="userSpaceOnUse"
+                    x1="24.848293"
+                    y1="127.04344"
+                    x2="35.655331"
+                    y2="126.9295"
+                  />
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient30348"
+                    id="linearGradient15012"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(9.5151471,0,0,10.374397,-186.3535,-1115.4384)"
+                    x1="24.376549"
+                    y1="121.54952"
+                    x2="27.395016"
+                    y2="121.54952"
+                  />
+                  <linearGradient
+                    id="linearGradient30348"
+                    inkscape:collect="always"
+                  >
+                    <stop
+                      id="stop30344"
+                      offset="0"
+                      style="stop-color:#ff1300;stop-opacity:1;"
+                    />
+                    <stop
+                      id="stop30346"
+                      offset="1"
+                      style="stop-color:#e43729;stop-opacity:1"
+                    />
+                  </linearGradient>
+                  <linearGradient
+                    inkscape:collect="always"
+                    xlink:href="#linearGradient2234"
+                    id="linearGradient15015"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(10.255088,0,0,10.255088,-205.64965,-1098.9397)"
+                    x1="24.504669"
+                    y1="125.6095"
+                    x2="30.627821"
+                    y2="125.76143"
+                  />
+                </defs>
+                <metadata id="metadata15064"></metadata>
+                <g
+                  inkscape:label="Layer 1"
+                  inkscape:groupmode="layer"
+                  id="layer1"
+                  transform="translate(0,-97)"
+                >
+                  <path
+                    sodipodi:nodetypes="ccccc"
+                    d="M 69.955848,239.83135 H 50.091746 v -72.74958 h 19.864102 z"
+                    id="path14270"
+                    inkscape:connector-curvature="0"
+                  />
+                  <path
+                    sodipodi:nodetypes="ccccc"
+                    d="M 69.955848,239.83135 H 50.091746 v -72.74958 h 19.864102 z"
+                    id="path14270"
+                    inkscape:connector-curvature="0"
+                  />
+                  <ellipse
+                    id="path14326"
+                    cx="59.953529"
+                    cy="145.56473"
+                    rx="9.9783325"
+                    ry="9.9738512"
+                  />
+                  <ellipse
+                    id="path14326"
+                    cx="59.953529"
+                    cy="145.56473"
+                    rx="9.9783325"
+                    ry="9.9738512"
+                  />
+
+                  <path
+                    transform="matrix(10.255088,0,0,10.255088,-205.64964,-1098.9398)"
+                    inkscape:connector-curvature="0"
+                    id="path14274"
+                    d="m 35.301,130.547 h -1.938 v -4.141 c 0,-0.508 -0.093,-0.894 -0.281,-1.156 -0.18,-0.258 -0.465,-0.391 -0.859,-0.391 -0.543,0 -0.934,0.184 -1.172,0.547 -0.242,0.367 -0.36,0.965 -0.36,1.797 v 3.344 h -1.937 v -7.094 h 1.484 l 0.25,0.906 h 0.11 c 0.218,-0.343 0.515,-0.601 0.89,-0.781 0.383,-0.176 0.817,-0.266 1.297,-0.266 0.82,0 1.445,0.227 1.875,0.672 0.426,0.45 0.641,1.094 0.641,1.938 z"
+                  />
+
+                  <path
+                    transform="matrix(10.255088,0,0,10.255088,-205.64964,-1098.9398)"
+                    inkscape:connector-curvature="0"
+                    id="path14274"
+                    d="m 35.301,130.547 h -1.938 v -4.141 c 0,-0.508 -0.093,-0.894 -0.281,-1.156 -0.18,-0.258 -0.465,-0.391 -0.859,-0.391 -0.543,0 -0.934,0.184 -1.172,0.547 -0.242,0.367 -0.36,0.965 -0.36,1.797 v 3.344 h -1.937 v -7.094 h 1.484 l 0.25,0.906 h 0.11 c 0.218,-0.343 0.515,-0.601 0.89,-0.781 0.383,-0.176 0.817,-0.266 1.297,-0.266 0.82,0 1.445,0.227 1.875,0.672 0.426,0.45 0.641,1.094 0.641,1.938 z"
+                  />
+
+                  <path
+                    inkscape:connector-curvature="0"
+                    id="path14278"
+                    d="m 64.947538,288.51853 h 71.377672 c 61.48778,0 56.47972,-57.59286 56.47972,-57.59286 v -68.0433 c 0,0 5.00806,-57.9824 -56.86923,-57.9824 H 64.558026 c -61.4877998,0 -56.4797252,56.81378 -56.4797252,56.81378 v 68.82238 c 0,0 -5.0080746,57.9824 56.8692372,57.9824 z"
+                    sodipodi:nodetypes="cscccsccc"
+                  />
+
+                  <path
+                    inkscape:connector-curvature="0"
+                    id="path14278"
+                    d="m 64.947538,288.51853 h 71.377672 c 61.48778,0 56.47972,-57.59286 56.47972,-57.59286 v -68.0433 c 0,0 5.00806,-57.9824 -56.86923,-57.9824 H 64.558026 c -61.4877998,0 -56.4797252,56.81378 -56.4797252,56.81378 v 68.82238 c 0,0 -5.0080746,57.9824 56.8692372,57.9824 z"
+                    sodipodi:nodetypes="cscccsccc"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <footer class="mode-section">
+          <span class="delimiter"></span>
+          <p>
+            <span class="normal-text">Made with&nbsp;</span
+            ><i class="fa fa-heart"></i
+            ><span class="normal-text">&nbsp;by Alexandru Nastase</span>
+          </p>
+          <p><span class="normal-text">Copyright &copy; 2020. All rights reserved.</span></p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SmoothScrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on("click", function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function() {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+
+    <!-- Scroll Up Arrow -->
+    <script>
+      $(".scroll-up-arrow").fadeOut(0);
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+          $(".scroll-up-arrow").fadeIn(200);
+        } else {
+          $(".scroll-up-arrow").fadeOut(200);
+        }
+      });
+    </script>
+
+    <!-- Slogan -->
+    <script src="./js/slogan.js"></script>
+
+    <!-- Light/Dark mode -->
+    <script src="./js/mode.js"></script>
+
+    <!-- Dropdown -->
+    <script src="./js/toggleDropdown.js"></script>
+    <script>
+      document.getElementsByClassName("dropdown-menu-container")[0].style.display = "none";
+    </script>
+  </body>
+</html>
