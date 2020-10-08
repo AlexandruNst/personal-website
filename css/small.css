@@ -632,7 +632,7 @@
     margin-top: 4em;
   }
   .interests .container-fluid .row div .interest-card {
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -682,7 +682,7 @@
     width: 100%;
     height: 96%;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem;
@@ -692,8 +692,8 @@
   }
   .projects .container-fluid .row div .project-card img {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .projects .container-fluid .row div .project-card .project-card-title {
     font-size: calc(1rem + 2vw);

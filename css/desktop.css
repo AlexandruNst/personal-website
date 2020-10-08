@@ -551,7 +551,7 @@ html {
 
 .interests .container-fluid .row div .interest-card {
   height: 85%;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-top: 3rem;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
@@ -610,7 +610,7 @@ html {
   width: 100%;
   height: 96%;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 15px;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
@@ -621,8 +621,8 @@ html {
 
 .projects .container-fluid .row div .project-card img {
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .projects .container-fluid .row div .project-card .project-card-title {
@@ -727,6 +727,24 @@ html {
 .contact .email {
   color: #5575ff;
   margin-bottom: 3rem;
+}
+
+.contact .email span {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.contact .email span:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.contact .email a:hover {
+  text-decoration: none;
 }
 
 .contact .contact-text {
